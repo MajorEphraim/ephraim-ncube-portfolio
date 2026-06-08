@@ -1,0 +1,50 @@
+.experience-comp{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.experience-comp-icon-container{
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    border: 2px solid #18365F;
+    flex-shrink: 0;
+}
+
+.line-and-dot-container{
+    height: 100%;
+    width: 2px;
+    background-color: #18365F;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 20px
+}
+
+.experience-comp-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #18365F;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+.experience-year-and-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-year-and-desc .year{
+    color: #8E98A6;
+    margin: 0;
+    font-size: 20px;
+}
+
+.experience-year-and-desc .desc{
+    color: #8E98A6;
+    font-size: 19px;
+    margin-top: 4px;
+}

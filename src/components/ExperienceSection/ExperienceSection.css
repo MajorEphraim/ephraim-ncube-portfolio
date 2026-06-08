@@ -1,0 +1,21 @@
+.experience-section{
+    background-color: #030C18;
+    width: 99vw;
+}
+
+.experience-container{
+    margin: 10px 90px 30px 90px;
+}
+
+.experince-timeline{
+    margin-top: 25px;
+}
+
+.timeline-and-pic{
+    display: flex;
+    flex-direction: row;
+}
+
+.exp-pic{
+    width: 65%;
+}

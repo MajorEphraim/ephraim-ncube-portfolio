@@ -1,11 +1,10 @@
 .home-section{
     background-color: #030C18;
     width: 99vw;
-    height: 300px;
 }
 
 .section-container{
-    margin: 0 60px;
+    margin: 10px 90px 30px 90px;
 }
 
 .home-content{
@@ -16,10 +15,64 @@
 .info-and-pic{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.professional-info{
+    flex: 1;
+}
+
+.home-greeting{
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #115EE5;
+}
+
+.firstname-and-lastname{
+    font-size: 62px;
+    margin: 40px 0px ;
+    font-weight: 500;
+    color: #fff;
+}
+
+.firstname-and-lastname span{
+    color: #115EE5;
+}
+
+.professional-title{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.professional-description{
+    color: #8E98A6;
+    font-size: 21px;
 }
 
 .info-and-pic p{
-    margin: 0;
+    /* margin: 0; */
+}
+
+.pic-side{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pic-and-icons{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.pic-and-icons img {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: 3px solid #fff;
 }
 
 .home-buttons{

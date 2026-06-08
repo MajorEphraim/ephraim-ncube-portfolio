@@ -1,5 +1,6 @@
 import './HomeSection.css'
 import NavBar from '../NavBar/NavBar'
+import pic from '../../assets/pic.jpg'
 
 const statsData = [
     {title:"Projects Completed", value:11},
@@ -19,13 +20,23 @@ export default function HomeSection() {
                             <p className='home-greeting'>Hi, I am</p>
                             <p className='firstname-and-lastname'>Ephraim <span>Ncube</span></p>
                             <p className='professional-title'>Full-Stack Developer</p>
-                            <p className='professional-description'>I build modern web and mobile applications that solves real-world problems. I specialize in JavaScript, React, React Native, .NET, SQL, and Firebase (NoSql).
-                             </p>
+                            <p className='professional-description'>I build modern web and mobile applications that solves real-world problems. I specialize in JavaScript, React, React Native, .NET, SQL, and Firebase (NoSql).</p>
+                        </div>
+
+                        <div className='pic-side'>
+                            <div className='pic-and-icons'>
+                                <div >
+
+                                </div>
+
+                                <img src={pic}/>
+
+                                <div>
+
+                                </div>
+                            </div>
                         </div>
                         
-                        <div className='pic-and-icons'>
-
-                        </div>
 
                     </div>
 

@@ -35,13 +35,26 @@
 ul{
     display: flex;
     flex-direction: row;
+    list-style: none;
+    gap: 2rem;
 }
 
-ul li{
-    list-style: none;
-    margin: 19px;
+.nav-link{
+    text-decoration: none;
     color: #A8B0B4;
     font-size: 15px;
+
+    padding: .7rem 1rem;
+    border-radius: 999px;
+
+    transition: .3s;
+}
+
+.nav-link.active{
+    color: #fff;
+    background: rgba(59, 130, 256, .15);
+    border: 1px solid rgba(59, 130, 256, .3);
+    box-shadow: 0 0 15px rgba(59, 130, 256, .2);
 }
 
 .downloaf-btn{

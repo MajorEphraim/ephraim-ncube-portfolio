@@ -2,6 +2,9 @@ import './HomeSection.css'
 import NavBar from '../NavBar/NavBar'
 import pic from '../../assets/pic.jpg'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode, faUser } from '@fortawesome/free-solid-svg-icons';
+
 const statsData = [
     {title:"Projects Completed", value:11},
     {title:"Years Coding", value:7},
@@ -11,7 +14,7 @@ const statsData = [
 
 export default function HomeSection() {
     return(
-        <section className='home-section'>
+        <section className='home-section' id='home'>
             <div className='section-container'>
                 <NavBar/>
                 <div className='home-content'>
@@ -25,14 +28,14 @@ export default function HomeSection() {
 
                         <div className='pic-side'>
                             <div className='pic-and-icons'>
-                                <div >
-
+                                <div className='contact-icon-container'>
+                                    <FontAwesomeIcon icon={faUser} />
                                 </div>
 
                                 <img src={pic}/>
 
-                                <div>
-
+                                <div className='code-icon-container'>
+                                    <FontAwesomeIcon icon={faCode} />
                                 </div>
                             </div>
                         </div>

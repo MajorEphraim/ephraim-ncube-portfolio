@@ -13,7 +13,7 @@ const experienceData = [
 
 export default function ExperienceSection() {
     return(
-        <section className='experience-section'>
+        <section className='experience-section' id='experience'>
             <div className='experience-container'>
                 <Header title="My Experience" subtitle="My journey as a developer"/>
                 <div className='timeline-and-pic'>

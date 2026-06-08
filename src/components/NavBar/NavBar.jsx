@@ -11,14 +11,14 @@ export default function NavBar(params) {
             </div>
 
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Experience</li>
-                <li>Contact</li>
+                <li><a className='nav-link active' href='#home'>Home</a></li>
+                <li><a className='nav-link' href='#projects'>Projects</a></li>
+                <li><a className='nav-link' href='#skills'>Skills</a></li>
+                <li><a className='nav-link' href='#experience'>Experience</a></li>
+                <li><a className='nav-link' href='#contact'>Contact</a></li>
             </ul>
 
             <button className='downloaf-btn'>Download CV</button>
         </nav>
     )
-} 
+}   

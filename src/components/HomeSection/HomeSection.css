@@ -63,9 +63,11 @@
 }
 
 .pic-and-icons{
+    position: relative;
     width: 300px;
     height: 300px;
     border-radius: 100%;
+    box-shadow: 0 0 60px 0px rgba(59, 130, 246, .6);
 }
 
 .pic-and-icons img {
@@ -73,6 +75,62 @@
     width: 300px;
     border-radius: 100%;
     border: 3px solid #fff;
+}
+
+.code-icon-container{
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, .03);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, .03);
+    border-radius: 4px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .2);
+    transition: all 0.3s ease;
+}
+
+.code-icon-container:hover{
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, .08);
+    border-color: #06b6d4;
+    color: #06b6d4;
+}
+
+.contact-icon-container{
+    position: absolute;
+    top: 30%;
+    right: -45px;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, .03);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, .03);
+    border-radius: 4px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .2);
+    transition: all 0.3s ease;
+}
+
+.contact-icon-container:hover{
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, .08);
+    border-color: #06b6d4;
+    color: #06b6d4;
 }
 
 .home-buttons{

@@ -1,0 +1,56 @@
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar p{
+    color: #F7F8F7;
+    font-size: 16px; 
+}
+
+.initials-and-names{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.initials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#115EE5;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.initials p{
+    font-size: 10px;
+    color: #fff;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li{
+    list-style: none;
+    margin: 19px;
+    color: #A8B0B4;
+    font-size: 15px;
+}
+
+.downloaf-btn{
+    background-color: #115EE5;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+}
+
+

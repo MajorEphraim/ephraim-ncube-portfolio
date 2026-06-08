@@ -21,7 +21,7 @@ export default function HomeSection() {
                     <div className='info-and-pic'>
                         <div className='professional-info'>
                             <p className='home-greeting'>Hi, I am</p>
-                            <p className='firstname-and-lastname'>Ephraim <span>Ncube</span></p>
+                            <p className='firstname-and-lastname'>Ephraim <span className='info-lastname'>Ncube</span></p>
                             <p className='professional-title'>Full-Stack Developer</p>
                             <p className='professional-description'>I build modern web and mobile applications that solves real-world problems. I specialize in JavaScript, React, React Native, .NET, SQL, and Firebase (NoSql).</p>
                         </div>

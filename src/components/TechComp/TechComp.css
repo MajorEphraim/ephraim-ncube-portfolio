@@ -6,6 +6,23 @@
     padding: 10px 15px;
 }
 
+.skill-pic-and-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech-pic-wrapper{
+    height: auto;
+    width: 22px;
+}
+
+.tech-pic-wrapper img{
+    height: 100%;
+    width: 100%;
+}
+
 .tech-name{
     margin: 0;
     margin-bottom: 20px;

@@ -8,6 +8,9 @@ export default function TechComp({name, skills}) {
                 {
                     skills.map(item=>(
                         <div className='skill-pic-and-name' key={item.name}>
+                            <div className='tech-pic-wrapper'>
+                                <img src={item.pic}/>
+                            </div>
                             <p className='tech-skill-name'>{item.name}</p>
                         </div>
                     ))
@@ -16,4 +19,4 @@ export default function TechComp({name, skills}) {
         </div>
     )
     
-}  
+}   

@@ -51,7 +51,7 @@ export default function HomeSection() {
                     <div className='stats-container'>
                         {
                             statsData.map((item, index)=>(
-                                <div className={index < 3 ?'stats-info':'stats-info-last'}>
+                                <div key={item.title} className={index < 3 ?'stats-info':'stats-info-last'}>
                                     <p className='stats-value'>{item.value}</p>
                                     <p className='stats-title'>{item.title}</p>
                                 </div>

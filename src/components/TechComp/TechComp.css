@@ -1,0 +1,20 @@
+.tech-comp{
+    background-color: #0E1723;
+    border-radius: 10px;
+    border: 1px solid #161F2D;
+    flex: 1;
+    padding: 10px 15px;
+}
+
+.tech-name{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.tech-skill-name{
+    font-size: 14px;
+    color: #94a3b8; 
+    margin: 3px 0;
+}

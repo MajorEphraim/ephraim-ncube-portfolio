@@ -1,0 +1,15 @@
+.skills-section{
+    background-color: #030C18;
+    width: 99vw;
+}
+
+.skills-container{
+    margin: 10px 90px 30px 90px;
+}
+
+.all-tech-cards{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   gap: 20px;
+    
+}

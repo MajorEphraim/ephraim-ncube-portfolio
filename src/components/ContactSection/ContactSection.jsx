@@ -23,7 +23,7 @@ export default function ContactSection() {
                     <div className='contact-info'>
                         {
                             contactData.map((item, index)=>(
-                                <div className='contact-comp'>
+                                <div key={item.method} className='contact-comp'>
                                     <div className={`contact-icon-wrapper${index%2 === 0 ? "":" dark"}`}>
                                         <FontAwesomeIcon icon={item.icon}/>
                                     </div>

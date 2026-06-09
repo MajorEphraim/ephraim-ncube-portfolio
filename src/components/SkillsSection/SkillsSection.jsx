@@ -23,22 +23,17 @@ import pic12 from '../../assets/icons/mobile/expo_dark.svg'
 import pic13 from '../../assets/icons/mobile/firebase.svg'
 import pic14 from '../../assets/icons/mobile/android-icon.svg'
 import pic15 from '../../assets/icons/mobile/apple_dark.svg'
-
+ 
 //importing icons for database
 import pic16 from '../../assets/icons/database/sql-server.svg'
 import pic17 from '../../assets/icons/database/mysql-icon-dark.svg'
 
-//importing icons for mobile
+//importing icons for tools
 import pic18 from '../../assets/icons/tools/git.svg'
 import pic19 from '../../assets/icons/tools/github_dark.svg'
 import pic20 from '../../assets/icons/tools/azure.svg'
 import pic21 from '../../assets/icons/tools/vscode.svg'
 import pic22 from '../../assets/icons/tools/postman.svg'
-
-// import pic23 from '../../assets/icons/frontend/javascript.svg'
-// import pic24 from '../../assets/icons/frontend/react_light.svg'
-// import pic25 from '../../assets/icons/frontend/tailwindcss.svg'
-
 
 const skillsData = [
     {

@@ -6,7 +6,7 @@
 }
 
 .nav-bar p{
-    color: #F7F8F7;
+    color: #F5F4F4;
     font-size: 16px; 
 }
 
@@ -43,18 +43,13 @@ ul{
     text-decoration: none;
     color: #A8B0B4;
     font-size: 15px;
-
-    padding: .7rem 1rem;
-    border-radius: 999px;
-
+    padding: 1rem 0;
     transition: .3s;
 }
 
 .nav-link.active{
-    color: #fff;
-    background: rgba(59, 130, 256, .15);
-    border: 1px solid rgba(59, 130, 256, .3);
-    box-shadow: 0 0 15px rgba(59, 130, 256, .2);
+    color: #115EE5;
+    border-bottom: 1px solid #115EE5;
 }
 
 .downloaf-btn{

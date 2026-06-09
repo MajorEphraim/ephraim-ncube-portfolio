@@ -1,14 +1,15 @@
 import './ExperienceComp.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function ExperienceComp({year, desc}) {
+export default function ExperienceComp({ year, desc, icon }) {
     return (
         <div className='experience-comp'>
-            <div className='experience-comp-icon-container'>
 
-            </div>
-
-            <div className='line-and-dot-container'>
-                <div className='experience-comp-dot'/>
+            <div className='experience-left-column'>
+                <div className='experience-comp-icon-container'>
+                    <FontAwesomeIcon icon={icon} />
+                </div>
+                <div className='experience-timeline-line' />
             </div>
 
             <div className='experience-year-and-desc'>

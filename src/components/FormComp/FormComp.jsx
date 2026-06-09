@@ -1,4 +1,5 @@
 import './FormComp.css'
+import BlueButton from '../BlueButton/BlueButton'
 
 export default function FormComp() {
     return(
@@ -11,6 +12,7 @@ export default function FormComp() {
             <textarea placeholder='Your Message'>
 
             </textarea>
+            <BlueButton name="Send Message"/>
         </form>
     )
 }

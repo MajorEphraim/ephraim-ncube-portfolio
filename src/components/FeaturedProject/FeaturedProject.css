@@ -4,7 +4,7 @@
 }
 
 .featured-project-container{
-    margin: 10px 90px 30px 90px;
+    margin: 30px 90px 30px 90px;
 }
 
 .featured-project-text-and-icon{
@@ -67,7 +67,9 @@
 }
 
 .feautured-project-content img{
-    width: 600px;
+    width: 40vw;
+    filter: drop-shadow(4px -6px 6px rgba(59, 130, 246, .6));
+    margin-top: 60px;
 }
 
 .list-of-features{
@@ -108,9 +110,9 @@
 }
 
 .featured-project-tech-stack div{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     width: fit-content;
 }
 
@@ -124,6 +126,36 @@
     font-size: 15px;
 }
 
+.featured-project-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #115EE5;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 12px 55px;
+}
+
+.btn.view-code{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 11px 55px;
+}
+
+.btn p{
+    margin: 0;
+}
+   
 .feautured-project-content{
     display: grid;
     grid-template-columns: 1fr 1fr;

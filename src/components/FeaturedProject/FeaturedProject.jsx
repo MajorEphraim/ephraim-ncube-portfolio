@@ -1,7 +1,9 @@
 import './FeaturedProject.css'
-import { faStar, faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faStar, faCheck, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import mockup from '../../assets/mockups/ct_multiple_mockup.png'
+import BlueButton from '../BlueButton/BlueButton'
 
 const feauturesList = [
     "Real-Time Vehicle Booking & Matching", "Live Bidding", "Instant Communication Layer", "Driver & Fleet Management", "Dynamic Transaction Management"
@@ -56,11 +58,19 @@ export default function FeaturedProject() {
                         {
                             skillsList.map(item=><p key={item}>{item}</p>)
                         }
+                        <p>etc</p>
                        </div>
                     </div>
 
                     <div className='featured-project-buttons'>
-                       
+                       <div className='btn live-demo'>
+                            <FontAwesomeIcon icon={faUpRightFromSquare} />
+                            <p>Live Demo</p>
+                       </div>
+                       <div className='btn view-code'>
+                            <FontAwesomeIcon icon={faGithub}/>
+                            <p>View Code (GitHub)</p>
+                       </div>
                     </div>
                 </div>
 

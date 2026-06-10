@@ -1,10 +1,14 @@
 import './FeaturedProject.css'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar, faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import mockup from '../../assets/mockups/ct_multiple_mockup.png'
 
 const feauturesList = [
-    "Driver App", "Client Portal", "Fleet Dashboard", "Fleet Dashboard", "Route Optimization"
+    "Real-Time Vehicle Booking & Matching", "Live Bidding", "Instant Communication Layer", "Driver & Fleet Management", "Dynamic Transaction Management"
+]
+
+const skillsList = [
+    "React", "Firebase", "Node.js", "HTML", "CSS"
 ]
 
 export default function FeaturedProject() {
@@ -33,9 +37,9 @@ export default function FeaturedProject() {
                         <div className='list-of-features'>
                             {
                                 feauturesList.map(item=>(
-                                    <div className='key-feature-comp'>
+                                    <div key={item} className='key-feature-comp'>
                                         <div>
-
+                                            <FontAwesomeIcon icon={faCheck}/>
                                         </div>
                                         <p>{item}</p>
                                     </div>
@@ -47,7 +51,12 @@ export default function FeaturedProject() {
                     </div>
 
                     <div className='featured-project-tech-stack'>
-                       
+                       <p className='tech-stack-title'>Tech Stack</p>
+                       <div>
+                        {
+                            skillsList.map(item=><p key={item}>{item}</p>)
+                        }
+                       </div>
                     </div>
 
                     <div className='featured-project-buttons'>

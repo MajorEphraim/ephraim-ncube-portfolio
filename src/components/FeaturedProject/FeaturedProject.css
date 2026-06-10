@@ -44,11 +44,16 @@
     font-size: 21px;
 }
 
-.featured-project-about, .featured-project-key-feautures{
-    margin-top: 25px;
+.featured-project-about, 
+.featured-project-key-feautures, 
+.featured-project-tech-stack{
+    margin-top: 30px;
 }
 
-.featured-project-about .about-project-title, .featured-project-key-feautures .feautured-project-title{
+.featured-project-about .about-project-title, 
+.featured-project-key-feautures .feautured-project-title,
+.featured-project-tech-stack .tech-stack-title
+{
     font-size: 24px;
     color: #fff;
     font-weight: 600;
@@ -68,7 +73,7 @@
 .list-of-features{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 10px;
+    margin-top: 25px;
     gap: 5px;
 
 }
@@ -86,12 +91,37 @@
     height: 30px;
     width: 30px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-feature-comp div svg{
+    color: #fff;
+    font-size: 0.9rem;
 }
 
 .list-of-features p{
     margin: 0;
     color: #8E98A6;
     font-size: 16px;
+}
+
+.featured-project-tech-stack div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    width: fit-content;
+}
+
+.featured-project-tech-stack div p{
+    border-radius: 8px; 
+    border: 2px solid #18365F;
+    background-color: #0b1528; 
+    padding: 5px;
+    width: fit-content;
+    color: #8E98A6;
+    font-size: 15px;
 }
 
 .feautured-project-content{

@@ -6,3 +6,112 @@
 .featured-project-container{
     margin: 10px 90px 30px 90px;
 }
+
+.featured-project-text-and-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px; 
+    border: 2px solid #18365F;
+    background-color: #0b1528; 
+    padding: 10px;
+    width: fit-content;
+}
+ 
+.featured-project-text-and-icon p{
+    margin: 0;
+    color: #3b82f6; 
+}
+
+.featured-project-text-and-icon svg{
+    color: #3b82f6; 
+    font-size: 1.1rem;
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.project-title-and-subtitle .project-title{
+    font-size: 65px;
+    color: #fff;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.project-title-and-subtitle .project-subtitle{
+    margin: 0;
+    color: #8E98A6;
+    font-size: 21px;
+}
+
+.featured-project-about, .featured-project-key-feautures{
+    margin-top: 25px;
+}
+
+.featured-project-about .about-project-title, .featured-project-key-feautures .feautured-project-title{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+
+.featured-project-about .about-project-info{
+    margin: 10px 0;
+    color: #8E98A6;
+    font-size: 19px;
+}
+
+.feautured-project-content img{
+    width: 600px;
+}
+
+.list-of-features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    gap: 5px;
+
+}
+
+.key-feature-comp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.key-feature-comp div{
+    background-color: #3b82f6;
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.list-of-features p{
+    margin: 0;
+    color: #8E98A6;
+    font-size: 16px;
+}
+
+.feautured-project-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titles    mockup"
+    "about     mockup"
+    "features  mockup"
+    "techStack buttons"
+     ;
+}
+
+
+
+
+/* Assigning grid template areas to elements */
+.project-title-and-subtitle {grid-area: titles;}
+.mockup {grid-area: mockup;}
+.featured-project-about{grid-area: about;}
+.featured-project-key-feautures{grid-area: features;}
+.featured-project-tech-stack{grid-area: techStack;}
+.featured-project-buttons{grid-area: buttons;}

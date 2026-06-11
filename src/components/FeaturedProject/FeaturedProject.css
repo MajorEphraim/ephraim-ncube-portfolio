@@ -66,7 +66,7 @@
     font-size: 19px;
 }
 
-.feautured-project-content img{
+.featured-project-content img{
     width: 40vw;
     filter: drop-shadow(4px -6px 6px rgba(59, 130, 246, .6));
     margin-top: 60px;
@@ -109,9 +109,18 @@
     font-size: 16px;
 }
 
+.project-tech-stack-and-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
 .featured-project-tech-stack div{
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     gap: 10px;
     width: fit-content;
 }
@@ -124,6 +133,7 @@
     width: fit-content;
     color: #8E98A6;
     font-size: 15px;
+    margin: 20px 0 0 0;
 }
 
 .featured-project-buttons {
@@ -156,14 +166,14 @@
     margin: 0;
 }
    
-.feautured-project-content{
+.featured-project-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "titles    mockup"
     "about     mockup"
     "features  mockup"
-    "techStack buttons"
+    "stackAndBtns stackAndBtns"
      ;
 }
 
@@ -175,5 +185,4 @@
 .mockup {grid-area: mockup;}
 .featured-project-about{grid-area: about;}
 .featured-project-key-feautures{grid-area: features;}
-.featured-project-tech-stack{grid-area: techStack;}
-.featured-project-buttons{grid-area: buttons;}
+.project-tech-stack-and-buttons{grid-area: stackAndBtns;}

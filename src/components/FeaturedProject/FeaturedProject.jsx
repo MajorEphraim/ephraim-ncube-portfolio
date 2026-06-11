@@ -21,7 +21,7 @@ export default function FeaturedProject() {
                     <FontAwesomeIcon icon={faStar}/>
                     <p>Featured Project Click Truckify</p>
                 </div>
-                <div className='feautured-project-content'>
+                <div className='featured-project-content'>
                     <div className='project-title-and-subtitle'>
                         <p className='project-title'>Click Truckify</p>
                         <p className='project-subtitle'>Connecting Drivers to Commercial Shipments</p>
@@ -51,30 +51,32 @@ export default function FeaturedProject() {
                         </div>
                        
                     </div>
+                    
+                    <div className='project-tech-stack-and-buttons'>
+                        <div className='featured-project-tech-stack'>
+                        <p className='tech-stack-title'>Tech Stack</p>
+                        <div>
+                            {
+                                skillsList.map(item=><p key={item}>{item}</p>)
+                            }
+                            <p>etc</p>
+                        </div>
+                        </div>
 
-                    <div className='featured-project-tech-stack'>
-                       <p className='tech-stack-title'>Tech Stack</p>
-                       <div>
-                        {
-                            skillsList.map(item=><p key={item}>{item}</p>)
-                        }
-                        <p>etc</p>
-                       </div>
-                    </div>
-
-                    <div className='featured-project-buttons'>
-                       <div className='btn live-demo'>
-                            <FontAwesomeIcon icon={faUpRightFromSquare} />
-                            <p>Live Demo</p>
-                       </div>
-                       <div className='btn view-code'>
-                            <FontAwesomeIcon icon={faGithub}/>
-                            <p>View Code (GitHub)</p>
-                       </div>
+                        <div className='featured-project-buttons'>
+                        <div className='btn live-demo'>
+                                <FontAwesomeIcon icon={faUpRightFromSquare} />
+                                <p>Live Demo</p>
+                        </div>
+                        <div className='btn view-code'>
+                                <FontAwesomeIcon icon={faGithub}/>
+                                <p>View Code (GitHub)</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
     )
-}     
+}       

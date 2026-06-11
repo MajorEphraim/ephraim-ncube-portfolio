@@ -11,27 +11,28 @@ import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 //importing all mockups
 import hb_mockup from '../../assets/mockups/hb_mockup.png'
 import ct_mockup from '../../assets/mockups/ct_mockup.png'
+import g_mockup from '../../assets/mockups/g_mockup.png'
 
 const projectsInfo = [
     {
         name:"HyBye", 
         mockup:hb_mockup, 
-        desc:'HiBye is a simple, efficient app for seamless, real-time communication. Users can quickly search for others, connect via friend requests, and start chatting instantly through an intuitive, modern interface.',
+        desc:'A simple, real-time chat app. Users can quickly search for others, send friend requests, and start talking instantly through a modern interface.',
         skills:["React Native", "Firebase" ,"JavaScript"]
     },
     
      {
-        name:"HyBye", 
-        mockup:hb_mockup, 
-        desc:'HiBye is a simple, efficient app for seamless, real-time communication. Users can quickly search for others, connect via friend requests, and start chatting instantly through an intuitive, modern interface.',
+        name:"Globii", 
+        mockup:g_mockup, 
+        desc:'It connects people facing professional challenges with skilled experts. Users post tasks, and solvers provide timely solutions for financial rewards and recognition.',
         skills:["React Native", "Firebase" ,"JavaScript"]
     },
         
     {
-        name:"HyBye",
-        mockup:hb_mockup, 
-        desc:'HiBye is a simple, efficient app for seamless, real-time communication. Users can quickly search for others, connect via friend requests, and start chatting instantly through an intuitive, modern interface.',
-        skills:["React Native", "Firebase" ,"JavaScript"]
+        name:"Click Truckify",
+        mockup:ct_mockup, 
+        desc:'A South African marketplace connecting users with verified bakkie and truck owners. It digitizes vehicle hiring, eliminating social media hunting and blind negotiations.',
+        skills:["React.js", "Firebase" ,"JavaScript"]
     },
 ]
 
@@ -71,6 +72,13 @@ export default function FeaturedProjects() {
                             </div>
                         ))
 
+                    }
+                </div>
+                <div className='projects-circles'>
+                    {
+                        projectsInfo.map(index=>(
+                            <div className='circle'/>
+                        ))
                     }
                 </div>
 

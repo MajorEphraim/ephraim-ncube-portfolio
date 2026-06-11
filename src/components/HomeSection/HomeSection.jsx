@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const statsData = [
-    {title:"Projects Completed", value:11},
+    {title:"Projects Completed", value:"10+"},
     {title:"Years Coding", value:7},
     {title:"Developer", value:"Full Stack"},
     {title:"Specialist", value:"Mobile & Web"},

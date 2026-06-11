@@ -6,3 +6,86 @@
 .featured-projects-container{
     margin: 10px 90px 30px 90px;
 }
+
+.featured-projects-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project-comp{
+    display: flex;
+    flex-direction: column;
+    background-color: #0E1723;
+    border-radius: 10px;
+    border: 1px solid #161F2D;
+    padding: 15px;
+}
+
+.mockup-wrapper{
+    width: fit-content;
+}
+
+.mockup-wrapper img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-comp .project-name{
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.project-comp .project-desc{
+    color: #94a3b8;
+    font-size: 15px; 
+    margin: 0;
+}
+
+.project-comp .skills{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.skills p{
+    border-radius: 8px; 
+    border: 2px solid #18365F;
+    background-color: #0b1528; 
+    padding: 5px;
+    width: fit-content;
+    color: #3b82f6;
+    font-size: 14px;
+}
+
+.project-comp .action-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-btns .btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #115EE5;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 11px 0;
+    flex: 1;
+}
+
+.action-btns .btn.view-code{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 0;
+}
+
+.btn p{
+    margin: 0;
+}

@@ -51,6 +51,10 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 #root {
   width: 100vw;
   max-width: 100%;

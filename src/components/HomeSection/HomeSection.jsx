@@ -4,19 +4,19 @@ import pic from '../../assets/pic.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faUser } from '@fortawesome/free-solid-svg-icons';
-
+  
 const statsData = [
     {title:"Projects Completed", value:"10+"},
     {title:"Years Coding", value:7},
     {title:"Developer", value:"Full Stack"},
     {title:"Specialist", value:"Mobile & Web"},
 ]
-
+ 
 export default function HomeSection() {
     return(
         <section className='home-section' id='home'>
             <div className='section-container'>
-                <NavBar/>
+                {/* <NavBar/> */}
                 <div className='home-content'>
                     <div className='info-and-pic'>
                         <div className='professional-info'>

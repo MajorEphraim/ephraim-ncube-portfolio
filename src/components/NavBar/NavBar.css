@@ -1,64 +1,90 @@
-.nav-bar{
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem; 
+    background-color: #0E1723;
+    position: sticky; 
+    width: calc(100% - (2 * 90px));
+    z-index: 10;
+    position: fixed;
+    
 }
 
-.nav-bar p{
+.nav-bar p {
     color: #F5F4F4;
     font-size: 16px; 
 }
 
-.initials-and-names{
+/* --- Brand Styles --- */
+.initials-and-names {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.initials{
+.initials {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#115EE5;
+    background-color: #115EE5;
     height: 30px;
     width: 30px;
     border-radius: 4px;
     margin-right: 12px;
 }
 
-.initials p{
+.initials p {
     font-size: 10px;
     color: #fff;
 }
 
-ul{
+/* --- Menu & Links --- */
+.nav-bar .nav-menu {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: #A8B0B4;
     font-size: 15px;
-    padding: 1rem 0;
-    transition: .3s;
+    padding: 0.5rem 0; 
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-.nav-link.active{
+/* Active and Hover States */
+.nav-link:hover,
+.nav-link.active {
     color: #115EE5;
-    border-bottom: 1px solid #115EE5;
 }
 
-.downloaf-btn{
+.nav-link.active {
+    border-bottom: 2px solid #115EE5;
+}
+
+/* --- CTA Button --- */
+.download-btn {
     background-color: #115EE5;
     border-radius: 4px;
-    padding: 10px;
+    padding: 10px 18px;
     font-size: 14px;
     color: #fff;
     border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
+.download-btn:hover {
+    background-color: #146afb;
+}
 
+.download-btn:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,21 @@
+.initials-and-names{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.initials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#115EE5;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.initials p{
+    font-size: 10px;
+    color: #fff;
+}

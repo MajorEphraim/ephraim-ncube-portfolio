@@ -6,7 +6,7 @@ import TransparentIconButton from '../TransparentIconButton/TransparentIconButto
 //importing Font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faUpRightFromSquare, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 //importing all mockups
 import hb_mockup from '../../assets/mockups/hb_mockup.png'
@@ -34,13 +34,26 @@ const projectsInfo = [
         desc:'A South African marketplace connecting users with verified bakkie and truck owners. It digitizes vehicle hiring, eliminating social media hunting and blind negotiations.',
         skills:["React.js", "Firebase" ,"JavaScript"]
     },
+
+      {
+        name:"Click Truckify",
+        mockup:ct_mockup, 
+        desc:'A South African marketplace connecting users with verified bakkie and truck owners. It digitizes vehicle hiring, eliminating social media hunting and blind negotiations.',
+        skills:["React.js", "Firebase" ,"JavaScript"]
+    },
 ]
 
 export default function FeaturedProjects() {
     return(
         <div className='featured-projects-section'>
             <div className='featured-projects-container'>
-                <Header title="Featured Projects" subtitle="Some of the things I've built"/>
+                <div className='header-and-btn'>
+                    <Header title="Featured Projects" subtitle="Some of the things I've built"/>
+                    <div className='btn view-all-code'>
+                        <p>View all projects</p>
+                        <FontAwesomeIcon icon={faArrowRight}/>
+                    </div>
+                </div>
                 <div className='featured-projects-wrapper'>
                     {
                         projectsInfo.map(item=>(

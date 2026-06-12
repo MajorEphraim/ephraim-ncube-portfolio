@@ -63,14 +63,14 @@ export default function FeaturedProject() {
                         </div>
 
                         <div className='featured-project-buttons'>
-                        <div className='btn'>
-                            <FontAwesomeIcon icon={faUpRightFromSquare} />
-                            <p>Live Demo</p>
-                        </div>
-                        <div className='btn view-code'>
-                                <FontAwesomeIcon icon={faGithub}/>
-                                <p>View Code (GitHub)</p>
-                        </div>
+                            <div className='btn'>
+                                <FontAwesomeIcon icon={faUpRightFromSquare} />
+                                <p>Live Demo</p>
+                            </div>
+                            <div className='btn view-code'>
+                                    <FontAwesomeIcon icon={faGithub}/>
+                                    <p>View Code (GitHub)</p>
+                            </div>
                         </div>
                     </div>
                 </div>

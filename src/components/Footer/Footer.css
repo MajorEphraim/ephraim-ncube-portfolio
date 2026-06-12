@@ -1,0 +1,85 @@
+/* Main Footer Container */
+.footer-container {
+    width: 100%;
+    background-color: #0E1723;
+    padding: 2rem 1.5rem; 
+    flex-direction: column;
+    gap: 1.5rem; 
+    box-sizing: border-box;
+}
+
+/* Row 1 Layout */
+.footer-container .upper-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding-bottom: 1.2rem;
+}
+
+/* Base text and list styles */
+.footer-container p, 
+.footer-container li {
+    color: #94a3b8;
+    margin: 0;
+}
+
+.brand-wrapper, 
+.contact-icons {
+    flex: 1; 
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 1rem; 
+}
+
+/* Style for social link icons */
+.contact-icons a {
+    color: #94a3b8;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.contact-icons a:hover {
+    color: #ffffff; 
+}
+
+/* Centered Navigation Menu */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+
+.nav-links li {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.nav-links li:hover {
+    color: #ffffff;
+}
+
+/* Row 2 Layout */
+.footer-container .lower-part {
+    border-top: 1px solid rgba(148, 163, 184, 0.1);
+    padding-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.co-operation-text {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}

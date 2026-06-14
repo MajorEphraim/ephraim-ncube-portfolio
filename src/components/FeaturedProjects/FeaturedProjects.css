@@ -165,3 +165,43 @@
 .featured-projects-wrapper::-webkit-scrollbar-thumb:hover{
     background-color: #18365F;
 }
+
+@media (max-width:1024px) {
+    
+    .project-comp {
+        display: flex;
+        flex-direction: column;
+        background-color: #0E1723;
+        border-radius: 10px;
+        border: 1px solid #161F2D;
+        padding: 15px;
+        
+        /* THE FIX: Use 40px for the two 20px gaps. */
+        /* flex-shrink: 0 ensures the cards refuse to squish under pressure */
+        flex: 0 0 calc((100% - 20px) / 2);
+        min-width: calc((100% - 20px) / 2); 
+        
+        scroll-snap-align: start;
+        box-sizing: border-box; /* Ensures card padding doesn't mess with width calculations */
+    }
+}
+
+
+@media (max-width:767px) {
+    .featured-projects-wrapper{
+        
+    }
+
+    .project-comp {
+        display: flex;
+        flex-direction: column;
+        background-color: #0E1723;
+        border-radius: 10px;
+        border: 1px solid #161F2D;
+        padding: 15px;
+        flex: 0 0 1;
+        min-width: 100%; 
+        scroll-snap-align: start;
+        box-sizing: border-box; 
+    }
+}

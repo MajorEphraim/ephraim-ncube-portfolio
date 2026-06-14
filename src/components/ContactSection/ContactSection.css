@@ -67,3 +67,20 @@
     font-size: 16px;
     color: #94a3b8; 
 }
+
+
+@media (max-width:1024px) {
+
+}
+  
+@media (max-width:767px) {
+   .contact-container{
+        margin: 100px 40px 30px 40px;
+    }
+
+    .contact-methods{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

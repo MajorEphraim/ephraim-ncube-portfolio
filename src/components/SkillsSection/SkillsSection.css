@@ -28,3 +28,23 @@
     color: #fff;
     font-size: 15px;
 }
+
+@media (max-width:1024px) {
+
+}
+  
+@media (max-width:767px) {
+    .skills-container{
+        margin: 100px 40px 30px 40px;
+    }
+  
+    .all-tech-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .text-and-button{
+        flex-direction: column;
+    }
+}

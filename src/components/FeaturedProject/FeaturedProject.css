@@ -196,20 +196,38 @@
         gap: 20px;
     }
 }
-
+  
 @media (max-width:767px) {
 
     .featured-project-container{
         margin: 100px 40px 30px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
+    .featured-project-content, .project-title-and-subtitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-title-and-subtitle .project-subtitle{
+        text-align: center;
+    }
+    
+    .project-title-and-subtitle .project-title{
+        font-size: 33px;
+    }
+    
     .featured-project-content img{
-        
+        width: 65vw;
     }
 
     .list-of-features{
         grid-template-columns: 1fr;
     }
+
     .project-tech-stack-and-buttons{
         flex-direction: column;
         align-items: flex-start;

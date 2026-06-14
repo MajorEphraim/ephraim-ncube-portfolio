@@ -15,12 +15,12 @@ function App() {
       <NavBar/>  
       <HomeSection/>
       <ExperienceSection/>
-      <section className='projects-section' id='projects'>
+      {/* <section className='projects-section' id='projects'>
         <FeaturedProject/>
         <FeaturedProjects/>
-      </section>
-      {/* <SkillsSection/>
-      <ContactSection/> */}
+      </section> */}
+      <SkillsSection/>
+      <ContactSection/>
       <Footer/>
     </div>  
   )  

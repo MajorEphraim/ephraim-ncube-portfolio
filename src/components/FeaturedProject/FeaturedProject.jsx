@@ -49,7 +49,7 @@ export default function FeaturedProject() {
 
                         </div>
                        
-                    </div>
+                    </div> 
                     
                     <div className='project-tech-stack-and-buttons'>
                         <div className='featured-project-tech-stack'>

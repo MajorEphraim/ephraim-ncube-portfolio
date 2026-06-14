@@ -35,7 +35,7 @@
   
 @media (max-width:767px) {
     .skills-container{
-        margin: 100px 40px 30px 40px;
+        margin: 60px 20px;
     }
   
     .all-tech-cards{
@@ -47,4 +47,4 @@
     .text-and-button{
         flex-direction: column;
     }
-}
+}  

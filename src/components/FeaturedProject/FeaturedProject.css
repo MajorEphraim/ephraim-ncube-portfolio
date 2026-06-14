@@ -1,13 +1,171 @@
-.featured-project-section{
+.featured-projects-section,
+.featured-project-section {
     background-color: #030C18;
     width: 100vw;
 }
 
-.featured-project-container{
+.featured-projects-container,
+.featured-project-container {
     margin: 100px 90px 30px 90px;
 }
 
-.featured-project-text-and-icon{
+.header-and-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-projects-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}  
+
+.project-comp {
+    display: flex;
+    flex-direction: column;
+    background-color: #0E1723;
+    border-radius: 10px;
+    border: 1px solid #161F2D;
+    padding: 15px;
+    flex: 0 0 calc((100% - 40px) / 3);
+    min-width: calc((100% - 40px) / 3); 
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+
+.mockup-wrapper {
+    width: 100%;
+}
+
+.mockup-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.project-comp .project-name {
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.project-comp .project-desc {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.5; 
+    margin: 0;
+}
+
+.project-comp .skills {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.skills p,
+.featured-project-tech-stack div p {
+    border-radius: 8px; 
+    border: 2px solid #18365F;
+    background-color: #0b1528; 
+    padding: 5px;
+    width: fit-content;
+    font-size: 14px;
+}
+
+.skills p {
+    color: #3b82f6;
+}
+
+.project-comp .action-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-btns .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #115EE5;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 11px 0;
+    flex: 1;
+}
+
+.action-btns .btn.view-code {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 0;
+}
+
+.btn.view-all-code {
+    background-color: transparent;
+    border: 2px solid #18365F;
+    border-radius: 8px;
+    height: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+}
+
+.btn p {
+    margin: 0;
+}
+
+.projects-circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap: 5px;
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #0b1528;
+    border: 1px solid #18365F;
+}
+
+.circle.solid {
+    background-color: #18365F;
+}
+
+.featured-projects-wrapper::-webkit-scrollbar {
+    height: 10px;
+}
+
+.featured-projects-wrapper::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.featured-projects-wrapper::-webkit-scrollbar-thumb {
+    background-color: #161F2D;
+    border-radius: 20px;
+}
+
+.featured-projects-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #18365F;
+}
+
+.featured-project-text-and-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,26 +177,26 @@
     width: fit-content;
 }
  
-.featured-project-text-and-icon p{
+.featured-project-text-and-icon p {
     margin: 0;
     color: #3b82f6; 
 }
 
-.featured-project-text-and-icon svg{
+.featured-project-text-and-icon svg {
     color: #3b82f6; 
     font-size: 1.1rem;
     width: 1.1rem;
     height: 1.1rem;
 }
 
-.project-title-and-subtitle .project-title{
+.project-title-and-subtitle .project-title {
     font-size: 65px;
     color: #fff;
     font-weight: 600;
     margin: 30px 0;
 }
 
-.project-title-and-subtitle .project-subtitle{
+.project-title-and-subtitle .project-subtitle {
     margin: 0;
     color: #8E98A6;
     font-size: 21px;
@@ -46,48 +204,46 @@
 
 .featured-project-about, 
 .featured-project-key-feautures, 
-.featured-project-tech-stack{
+.featured-project-tech-stack {
     margin-top: 30px;
 }
 
 .featured-project-about .about-project-title, 
 .featured-project-key-feautures .feautured-project-title,
-.featured-project-tech-stack .tech-stack-title
-{
+.featured-project-tech-stack .tech-stack-title {
     font-size: 24px;
     color: #fff;
     font-weight: 600;
     margin: 0;
 }
 
-.featured-project-about .about-project-info{
+.featured-project-about .about-project-info {
     margin: 10px 0;
     color: #8E98A6;
     font-size: 19px;
 }
 
-.featured-project-content img{
+.featured-project-content img {
     width: 40vw;
     filter: drop-shadow(4px -6px 6px rgba(59, 130, 246, .6));
     margin-top: 60px;
 }
 
-.list-of-features{
+.list-of-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 25px;
     gap: 5px;
-
 }
 
-.key-feature-comp{
+.key-feature-comp {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.key-feature-comp div{
+.key-feature-comp div {
     background-color: #3b82f6;
     border-radius: 100px;
     height: 30px;
@@ -98,25 +254,25 @@
     justify-content: center;
 }
 
-.key-feature-comp div svg{
+.key-feature-comp div svg {
     color: #fff;
     font-size: 0.9rem;
 }
 
-.list-of-features p{
+.list-of-features p {
     margin: 0;
     color: #8E98A6;
     font-size: 16px;
 }
 
-.project-tech-stack-and-buttons{
+.project-tech-stack-and-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
 }
 
-.featured-project-tech-stack div{
+.featured-project-tech-stack div {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -124,12 +280,7 @@
     width: fit-content;
 }
 
-.featured-project-tech-stack div p{
-    border-radius: 8px; 
-    border: 2px solid #18365F;
-    background-color: #0b1528; 
-    padding: 5px;
-    width: fit-content;
+.featured-project-tech-stack div p {
     color: #8E98A6;
     font-size: 15px;
     margin: 20px 0 0 0;
@@ -142,7 +293,7 @@
     gap: 15px;
 }
 
-.btn{
+.btn {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -155,42 +306,41 @@
     padding: 12px 55px;
 }
 
-.btn.view-code{
+.btn.view-code {
     background-color: transparent;
     border: 1px solid #fff;
     padding: 11px 55px;
 }
-
-.btn p{
-    margin: 0;
-}
-   
-.featured-project-content{
+    
+.featured-project-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "titles    mockup"
     "about     mockup"
     "features  mockup"
-    "stackAndBtns stackAndBtns"
-     ;
+    "stackAndBtns stackAndBtns";
 }   
  
 @media (max-width:1024px) {
-    .featured-project-content img{
-        
+    .project-comp {
+        flex: 0 0 calc((100% - 20px) / 2);
+        min-width: calc((100% - 20px) / 2); 
+    }
+
+    .featured-project-content img {
+        width: 45vw;
     }
     
-    .featured-project-content{
+    .featured-project-content {
         grid-template-areas:
         "titles       mockup"
         "about        mockup"
         "features     features"
-        "stackAndBtns stackAndBtns"
-        ;
+        "stackAndBtns stackAndBtns";
     } 
 
-    .project-tech-stack-and-buttons{
+    .project-tech-stack-and-buttons {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
@@ -198,63 +348,109 @@
 }
   
 @media (max-width:767px) {
+    .project-comp {
+        flex: 0 0 100%;
+        min-width: 100%; 
+    }
 
-    .featured-project-container{
-        margin: 100px 40px 30px 40px;
+    .featured-project-container {
+        margin: 60px 20px;
+        padding: 20px;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: calc(100% - 40px);
     }
 
-    .featured-project-content, .project-title-and-subtitle{
+    .featured-project-content, 
+    .project-title-and-subtitle,
+    .featured-project-about,
+    .featured-project-key-feautures,
+    .featured-project-tech-stack {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .project-title-and-subtitle .project-subtitle{
+        width: 100%;
         text-align: center;
     }
-    
-    .project-title-and-subtitle .project-title{
-        font-size: 33px;
-    }
-    
-    .featured-project-content img{
-        width: 65vw;
-    }
 
-    .list-of-features{
-        grid-template-columns: 1fr;
-    }
-
-    .project-tech-stack-and-buttons{
-        flex-direction: column;
-        align-items: flex-start;
+    .featured-project-content {
+        display: flex;
         gap: 20px;
     }
-    
-    .featured-project-content{
-        grid-template-areas:
-        "titles       titles"
-        "mockup       mockup"
-        "features     features"
-        "stackAndBtns stackAndBtns"
-        ;
-    }
-    
-    .featured-project-buttons{
-        flex-direction: column;
+
+    .project-title-and-subtitle .project-title {
+        font-size: 36px;
+        margin: 20px 0 10px 0;
     }
 
+    .project-title-and-subtitle .project-subtitle {
+        font-size: 18px;
+    }
+
+    .featured-project-about .about-project-info {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .featured-project-content img {
+        width: 80%;
+        max-width: 320px;
+        margin-top: 20px;
+    }
+
+    .list-of-features {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 15px;
+        width: 100%;
+        max-width: 290px;
+    }
+
+    .key-feature-comp {
+        text-align: left;
+    }
+
+    .project-tech-stack-and-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .featured-project-tech-stack div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .featured-project-tech-stack div p {
+        margin: 5px 0 0 0;
+    }
+    
+    .featured-project-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .btn, .btn.view-code {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px 0;
+        box-sizing: border-box;
+    }
 }
 
-
-
-
-/* Assigning grid template areas to elements */
-.project-title-and-subtitle {grid-area: titles;}
-.mockup {grid-area: mockup;}
-.featured-project-about{grid-area: about;}
-.featured-project-key-feautures{grid-area: features;}
-.project-tech-stack-and-buttons{grid-area: stackAndBtns;}
+.project-title-and-subtitle { grid-area: titles; }
+.mockup { grid-area: mockup; }
+.featured-project-about { grid-area: about; }
+.featured-project-key-feautures { grid-area: features; }
+.project-tech-stack-and-buttons { grid-area: stackAndBtns; }

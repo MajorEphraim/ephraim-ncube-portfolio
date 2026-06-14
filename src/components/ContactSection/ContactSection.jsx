@@ -40,7 +40,7 @@ export default function ContactSection() {
                     <div className='contact-form'>
                         <FormComp/>
                     </div>
-                </div>
+                </div>   
 
             </div>
         </section>

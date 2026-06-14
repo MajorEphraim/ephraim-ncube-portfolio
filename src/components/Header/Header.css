@@ -9,3 +9,22 @@
     font-size: 21px;
     margin-top: 8px;
 }
+
+@media (max-width:1024px) {
+    
+}
+
+
+@media (max-width:767px) {
+    .header-title, .header-subtitle{
+        text-align: center;
+    }
+
+    .header-title{
+        font-size: 26px;
+    }
+
+    .header-subtitle{
+        font-size: 19px;
+    }
+}

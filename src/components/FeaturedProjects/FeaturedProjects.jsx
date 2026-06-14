@@ -12,13 +12,14 @@ import { faUpRightFromSquare, faArrowRight } from '@fortawesome/free-solid-svg-i
 import hb_mockup from '../../assets/mockups/hb_mockup.png'
 import ct_mockup from '../../assets/mockups/ct_mockup.png'
 import g_mockup from '../../assets/mockups/g_mockup.png'
+import ms_mockup from '../../assets/mockups/ms_mockup.png'
 
 const projectsInfo = [
     {
         name:"HyBye", 
         mockup:hb_mockup, 
         desc:'A simple, real-time chat app. Users can quickly search for others, send friend requests, and start talking instantly through a modern interface.',
-        skills:["React Native", "Firebase" ,"JavaScript"]
+        skills:["React Native", "Firebase" ,"Expo"]
     },
     
      {
@@ -29,17 +30,17 @@ const projectsInfo = [
     },
         
     {
-        name:"Click Truckify",
-        mockup:ct_mockup, 
-        desc:'A South African marketplace connecting users with verified bakkie and truck owners. It digitizes vehicle hiring, eliminating social media hunting and blind negotiations.',
-        skills:["React.js", "Firebase" ,"JavaScript"]
+        name:"MyndStake",
+        mockup:ms_mockup, 
+        desc:'A quiz gaming platform that gives you a chance to compete in your favorite topic with other users of similar interest and reward you the amount when you got to first place.',
+        skills:["Expo","React Native", "Firebase"]
     },
 
       {
         name:"Click Truckify",
         mockup:ct_mockup, 
         desc:'A South African marketplace connecting users with verified bakkie and truck owners. It digitizes vehicle hiring, eliminating social media hunting and blind negotiations.',
-        skills:["React.js", "Firebase" ,"JavaScript"]
+        skills:["React.js", "Firebase" ,"Node.js"]
     },
 ]
 
@@ -69,6 +70,7 @@ export default function FeaturedProjects() {
                                     {
                                         item.skills.map(skill=><p key={skill}>{skill}</p>)
                                     }
+                                    <p>etc</p>
                                 </div>
 
                                 <div className='action-btns'>
@@ -89,8 +91,8 @@ export default function FeaturedProjects() {
                 </div>
                 <div className='projects-circles'>
                     {
-                        projectsInfo.map(index=>(
-                            <div className='circle'/>
+                        projectsInfo.map(item=>(
+                            <div key={item.name} className='circle'/>
                         ))
                     }
                 </div>

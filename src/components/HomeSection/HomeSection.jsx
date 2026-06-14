@@ -10,14 +10,13 @@ const statsData = [
     {title:"Years Coding", value:7},
     {title:"Developer", value:"Full Stack"},
     {title:"Specialist", value:"Mobile & Web"},
-]
+] 
  
 export default function HomeSection() {
     return(
         <section className='home-section' id='home'>
             <div className='section-container'>
-                {/* <NavBar/> */}
-                <div className='home-content'>
+                {/* <div className='home-content'> */}
                     <div className='info-and-pic'>
                         <div className='professional-info'>
                             <p className='home-greeting'>Hi, I am</p>
@@ -59,8 +58,8 @@ export default function HomeSection() {
                         }
 
                     </div>
-
-                </div>
+{/* 
+                </div> */}
 
             </div>
         </section>

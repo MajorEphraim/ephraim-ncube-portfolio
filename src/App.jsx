@@ -12,18 +12,18 @@ import NavBar from './components/NavBar/NavBar'
 function App() {
   return (
     <div className='main-container'>
-      <NavBar/>
+      <NavBar/>  
       <HomeSection/>
-      <ExperienceSection/>
+      {/* <ExperienceSection/>
       <section className='projects-section' id='projects'>
         <FeaturedProject/>
         <FeaturedProjects/>
       </section>
       <SkillsSection/>
-      <ContactSection/>
+      <ContactSection/> */}
       <Footer/>
     </div>  
-  )
+  )  
 }
 
 export default App

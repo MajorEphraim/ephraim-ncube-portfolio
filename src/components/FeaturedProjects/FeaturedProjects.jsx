@@ -1,3 +1,4 @@
+import { useState, useRef } from 'react' // Added useRef here
 import './FeaturedProjects.css'
 import Header from '../Header/Header'
 import BlueButton from '../BlueButton/BlueButton'
@@ -45,6 +46,46 @@ const projectsInfo = [
 ]
 
 export default function FeaturedProjects() {
+    // State for active index
+    const [activeIndex, setActiveIndex] = useState(0)
+    
+    // Ref to track the scrollable container wrapper
+    const wrapperRef = useRef(null)
+
+    // Dynamic mathematical evaluation for when a user scrolls manually or swipes
+    const handleScroll = () => {
+        if (!wrapperRef.current) return;
+
+        const { scrollLeft, clientWidth, scrollWidth } = wrapperRef.current;
+        const totalScrollable = scrollWidth - clientWidth;
+        
+        // Safety guard: Prevents edge cases and division by zero
+        if (totalScrollable <= 0 || projectsInfo.length <= 1) {
+            setActiveIndex(0);
+            return;
+        }
+
+        const totalCards = projectsInfo.length;
+        const newIndex = Math.round((scrollLeft / totalScrollable) * (totalCards - 1));
+        
+        setActiveIndex(newIndex);
+    };
+
+    // Handler to execute smooth automated scrolling when a dot is clicked
+    const handleDotClick = (index) => {
+        if (wrapperRef.current && projectsInfo.length > 1) {
+            const { clientWidth, scrollWidth } = wrapperRef.current;
+            const totalScrollable = scrollWidth - clientWidth;
+            
+            const scrollToPosition = (index / (projectsInfo.length - 1)) * totalScrollable;
+            
+            wrapperRef.current.scrollTo({
+                left: scrollToPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return(
         <div className='featured-projects-section'>
             <div className='featured-projects-container'>
@@ -55,12 +96,18 @@ export default function FeaturedProjects() {
                         <FontAwesomeIcon icon={faArrowRight}/>
                     </div>
                 </div>
-                <div className='featured-projects-wrapper'>
+                
+                {/* Wired up wrapperRef and handleScroll listener below */}
+                <div 
+                    className='featured-projects-wrapper'
+                    ref={wrapperRef}
+                    onScroll={handleScroll}
+                >
                     {
                         projectsInfo.map(item=>(
                             <div key={item.name} className='project-comp'>
                                 <div className='mockup-wrapper'>
-                                    <img src={item.mockup}/>
+                                    <img src={item.mockup} alt={item.name}/>
                                 </div>
 
                                 <p className='project-name'>{item.name}</p>
@@ -86,13 +133,18 @@ export default function FeaturedProjects() {
                                 </div>
                             </div>
                         ))
-
                     }
                 </div>
+                
                 <div className='projects-circles'>
                     {
-                        projectsInfo.map(item=>(
-                            <div key={item.name} className='circle'/>
+                        projectsInfo.map((item, index)=>(
+                            <div 
+                                key={item.name} 
+                                className={`circle${activeIndex === index ? ' solid' : ''}`}
+                                onClick={() => handleDotClick(index)}
+                                style={{ cursor: 'pointer' }}
+                            />
                         ))
                     }
                 </div>
@@ -100,4 +152,4 @@ export default function FeaturedProjects() {
             </div>  
         </div>
     )
-} 
+}

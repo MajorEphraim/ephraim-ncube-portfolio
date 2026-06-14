@@ -83,3 +83,34 @@
     font-size: 14px;
     letter-spacing: 0.5px;
 }
+
+@media (max-width:1024px) {
+    .footer-container .upper-part{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-links{
+        gap: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-container .upper-part{
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .nav-links{
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .contact-icons{
+        gap: 25px;
+    }
+
+    .co-operation-text{
+        font-size: 11px;
+    }
+}

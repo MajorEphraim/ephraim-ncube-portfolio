@@ -18,4 +18,25 @@
 
 .exp-pic{
     width: 65%;
-}   
+}      
+ 
+@media (max-width:1024px) {
+    .exp-pic{
+        width: 60%;
+    }      
+}
+
+@media (max-width:767px) {
+   
+    .experience-container{
+        margin: 100px 40px 30px 40px;
+    }
+
+       .exp-pic{
+        width: 100%;
+    }  
+    
+    .timeline-and-pic{
+        flex-direction: column-reverse;
+    } 
+}

@@ -14,16 +14,16 @@ function App() {
     <div className='main-container'>
       <NavBar/>  
       <HomeSection/>
-      {/* <ExperienceSection/>
+      <ExperienceSection/>
       <section className='projects-section' id='projects'>
         <FeaturedProject/>
         <FeaturedProjects/>
       </section>
-      <SkillsSection/>
+      {/* <SkillsSection/>
       <ContactSection/> */}
       <Footer/>
     </div>  
   )  
-}
+}  
 
 export default App

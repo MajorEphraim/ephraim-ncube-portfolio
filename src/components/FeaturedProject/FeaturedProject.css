@@ -304,6 +304,7 @@
     border-radius: 4px;
     font-size: 17px;
     padding: 12px 55px;
+    cursor: pointer;
 }
 
 .btn.view-code {
@@ -439,7 +440,7 @@
         gap: 8px;
         width: 100%;
     }
-
+   
     .featured-project-tech-stack div p {
         margin: 5px 0 0 0;
     }

@@ -17,31 +17,35 @@ import ms_mockup from '../../assets/mockups/ms_mockup.png'
 
 const projectsInfo = [
     {
-        name:"HyBye", 
+        name:"HiBye", 
         mockup:hb_mockup, 
         desc:'A simple, real-time chat app. Users can quickly search for others, send friend requests, and start talking instantly through a modern interface.',
-        skills:["React Native", "Firebase" ,"Expo"]
+        skills:["React Native", "Firebase" ,"Expo"],
+        repo:'https://github.com/MajorEphraim/hibye'
     },
     
      {
         name:"Globii", 
         mockup:g_mockup, 
         desc:'It connects people facing professional challenges with skilled experts. Users post tasks, and solvers provide timely solutions for financial rewards and recognition.',
-        skills:["React Native", "Firebase" ,"JavaScript"]
+        skills:["React Native", "Firebase" ,"JavaScript"],
+        repo:'https://github.com/MajorEphraim/globii'
     },
         
     {
         name:"MyndStake",
         mockup:ms_mockup, 
         desc:'A quiz gaming platform that gives you a chance to compete in your favorite topic with other users of similar interest and reward you the amount when you got to first place.',
-        skills:["Expo","React Native", "Firebase"]
+        skills:["Expo","React Native", "Firebase"],
+        repo:'https://github.com/MajorEphraim/myndstake'
     },
 
       {
         name:"Click Truckify",
         mockup:ct_mockup, 
         desc:'A South African marketplace connecting users with verified bakkie and truck owners. It digitizes vehicle hiring, eliminating social media hunting and blind negotiations.',
-        skills:["React.js", "Firebase" ,"Node.js"]
+        skills:["React.js", "Firebase" ,"Node.js"],
+        repo:'https://github.com/MajorEphraim/click-truckify'
     },
 ]
 
@@ -125,7 +129,7 @@ export default function FeaturedProjects() {
                                         <FontAwesomeIcon icon={faUpRightFromSquare} />
                                         <p>Demo</p>
                                     </div>
-                                    <div className='btn view-code'>
+                                    <div className='btn view-code' onClick={()=>window.location.href=item.repo}>
                                         <FontAwesomeIcon icon={faGithub}/>
                                         <p>GitHub</p>
                                     </div>

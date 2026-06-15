@@ -145,20 +145,21 @@
     gap: 20px;
 }
 
-.home-work-btn{
-    background-color: #115EE5;
+.home-work-btn, .home-cv-btn{
+    cursor: pointer;
     border-radius: 4px;
     padding: 15px 22px;
     font-size: 16px;
+}
+
+.home-work-btn{
+    background-color: #115EE5;
     color: #fff;
     border: none;
 }
 
 .home-cv-btn{
     background-color: transparent;
-    border-radius: 4px;
-    padding: 15px 22px;
-    font-size: 16px;
     color: #fff;
     border: 1px solid #434750;
 }

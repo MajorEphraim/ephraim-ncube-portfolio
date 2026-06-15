@@ -34,10 +34,11 @@ export default function HomeSection() {
                                 </a>
 
                                 <img src={pic}/>
-
-                                <div className='code-icon-container'>
-                                    <FontAwesomeIcon icon={faCode} />
-                                </div>
+                                <a href='https://github.com/MajorEphraim/ephraim-ncube-portfolio'>
+                                    <div className='code-icon-container'>
+                                        <FontAwesomeIcon icon={faCode} />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         
@@ -45,7 +46,7 @@ export default function HomeSection() {
                     </div>
 
                     <div className='home-buttons'>
-                        <button className='home-work-btn'>View My Work</button>
+                        <button className='home-work-btn' onClick={()=>window.location.href='https://github.com/MajorEphraim'}>View My Work</button>
                         <button className='home-cv-btn'>Download CV</button>
                     </div>
 

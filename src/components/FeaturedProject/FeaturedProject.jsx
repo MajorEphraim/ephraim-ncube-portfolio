@@ -63,11 +63,11 @@ export default function FeaturedProject() {
                         </div>
 
                         <div className='featured-project-buttons'>
-                            <div className='btn'>
+                            <div className='btn' onClick={() => window.location.href = 'https://clicktruckify.co.za'}>
                                 <FontAwesomeIcon icon={faUpRightFromSquare} />
                                 <p>Live Demo</p>
                             </div>
-                            <div className='btn view-code'>
+                            <div className='btn view-code' onClick={()=>window.location.href='https://github.com/MajorEphraim/click-truckify'}>
                                 <FontAwesomeIcon icon={faGithub}/>
                                 <p>View Code (GitHub)</p>
                             </div>

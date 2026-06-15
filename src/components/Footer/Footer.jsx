@@ -20,15 +20,15 @@ export default function Footer() {
         </ul> 
 
         <div className='contact-icons'>
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          <a href="https://github.com/MajorEphraim?tab=repositories" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/ephraim-ncube-79178234a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="mailto:your-email@example.com">
+          <a href="mailto:support@clicktruckify.co.za">
             <FontAwesomeIcon icon={faEnvelope} />
-          </a>
+          </a> 
         </div>
       </div>
 

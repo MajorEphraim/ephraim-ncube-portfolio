@@ -13,7 +13,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: self-start;
+    align-items: center;
+    gap: 60px;
     margin-top: 30px;
 }
 
@@ -29,10 +30,10 @@
 
 .firstname-and-lastname{
     font-size: 62px;
-    margin: 40px 0px ;
-    font-weight: 500;
+    margin: 25px 0;
+    font-weight: 700;
     color: #fff;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .firstname-and-lastname span{
@@ -43,16 +44,14 @@
     font-size: 26px;
     color: #fff;
     font-weight: 500;
+    margin: 0;
 }
 
 .professional-description{
     color: #8E98A6;
     font-size: 21px;
-    line-height: 1.5;
-}
-
-.info-and-pic p{
-    /* margin: 0; */
+    line-height: 1.6;
+    max-width: 650px;
 }
 
 .pic-side{
@@ -65,14 +64,14 @@
 
 .pic-and-icons{
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 420px;
+    height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.pic-and-icons img {
+.pic-and-icons img{
     height: 300px;
     width: 300px;
     border-radius: 100%;
@@ -82,23 +81,21 @@
 
 .code-icon-container{
     position: absolute;
-    bottom: 20px;
-    left: 5px;
+    bottom: 25px;
+    left: 15px;
     width: 60px;
     height: 60px;
     background: rgba(255, 255, 255, .03);
-
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-
     border: 1px solid rgba(255, 255, 255, .03);
-    border-radius: 4px ;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #3b82f6;
     box-shadow: 0 4px 30px rgba(0, 0, 0, .2);
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 }
 
 .code-icon-container:hover{
@@ -110,23 +107,21 @@
 
 .contact-icon-container{
     position: absolute;
-    top: 30%;
-    right: 0px;
+    top: 25%;
+    right: 10px;
     width: 45px;
     height: 45px;
     background: rgba(255, 255, 255, .03);
-
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-
     border: 1px solid rgba(255, 255, 255, .03);
-    border-radius: 4px ;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #3b82f6;
     box-shadow: 0 4px 30px rgba(0, 0, 0, .2);
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 }
 
 .contact-icon-container:hover{
@@ -145,11 +140,13 @@
     gap: 20px;
 }
 
-.home-work-btn, .home-cv-btn{
+.home-work-btn,
+.home-cv-btn{
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 15px 22px;
     font-size: 16px;
+    transition: all .25s ease;
 }
 
 .home-work-btn{
@@ -158,19 +155,28 @@
     border: none;
 }
 
+.home-work-btn:hover{
+    transform: translateY(-2px);
+}
+
 .home-cv-btn{
     background-color: transparent;
     color: #fff;
     border: 1px solid #434750;
 }
 
+.home-cv-btn:hover{
+    border-color: #115EE5;
+    color: #115EE5;
+}
+
 .stats-container{
     display: flex;
     flex-direction: row;
     background-color: #09121D;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid #161F2D;
-    padding: 30px 0;
+    padding: 35px 0;
 }
 
 .stats-info{
@@ -180,7 +186,7 @@
     align-items: center;
     justify-content: center;
     gap: 17px;
-    border-right: 1px solid #161F2D;;
+    border-right: 1px solid #161F2D;
 }
 
 .stats-info-last{
@@ -195,7 +201,8 @@
 
 .stats-value{
     color: #115EE5;
-    font-size: 27px;
+    font-size: 30px;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -205,71 +212,61 @@
     margin: 0;
 }
 
+/* Tablets */
 
-/* Adjustments for tablets */
-@media (max-width:1024px) {
+@media (max-width:1024px){
+
     .section-container{
-        margin: 80px 70px 30px 70px;
+        margin: 80px 60px 30px 60px;
     }
-  
+
+    .info-and-pic{
+        gap: 40px;
+    }
+
     .firstname-and-lastname{
-        font-size: 40px;
+        font-size: 48px;
     }
 
     .professional-title{
-        font-size: 25px;
+        font-size: 24px;
     }
-    
+
     .professional-description{
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .pic-and-icons{
         width: 350px;
         height: 320px;
-     }
+    }
 
-    .pic-and-icons img {
-        height: 270px;
+    .pic-and-icons img{
         width: 270px;
-    }
-
-    .home-work-btn{
-        padding: 19px 25px;
-        font-size: 18px;
-    
-    }
-
-    .home-cv-btn{
-        padding: 19px 25px;
-        font-size: 18px;
-        border: 2px solid #434750;
+        height: 270px;
     }
 
     .stats-value{
-        font-size: 25px;
+        font-size: 26px;
     }
-
-    .stats-title{
-        font-size: 18px;
-    }
-
-
 }
 
-/* Adjustments for smartphones */
-@media (max-width:767px) {
-    
+/* Mobile */
+
+@media (max-width:767px){
+
     .section-container{
-        margin: 80px 30px 30px 30px;
+        margin: 80px 24px 30px 24px;
     }
-  
+
     .info-and-pic{
         flex-direction: column-reverse;
         align-items: center;
+        gap: 25px;
     }
 
     .professional-info{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -277,98 +274,88 @@
 
     .home-greeting{
         font-size: 18px;
-        margin: 0;
     }
 
     .firstname-and-lastname{
-        font-size: 30px;
-        margin: 10px 0px ;
-        font-weight: 500;
-        color: #fff;
-        line-height: 1.2;
+        font-size: 36px;
+        text-align: center;
+        margin: 15px 0;
     }
 
     .professional-title{
-        font-size: 21px;
-        color: #fff;
-        font-weight: 500;
-        margin: 0;
+        font-size: 22px;
+        text-align: center;
     }
 
     .professional-description{
-        font-size: 18px;
-        margin: 0;
+        font-size: 17px;
         text-align: center;
-        line-height: 1.3;
+        line-height: 1.6;
         margin: 12px 0;
     }
 
-    .home-buttons{
-        display: flex;
-        flex-direction: row;
+    .pic-side{
         justify-content: center;
-        align-items: center;
-        margin: 15px 0;
-        gap: 10px;
+    }
+
+    .pic-and-icons{
+        width: 280px;
+        height: 280px;
+    }
+
+    .pic-and-icons img{
+        width: 230px;
+        height: 230px;
+    }
+
+    .code-icon-container{
+        width: 50px;
+        height: 50px;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .contact-icon-container{
+        width: 40px;
         height: 40px;
+        right: 15px;
     }
 
-    .home-work-btn, .home-cv-btn{
-        display: flex;
+    .home-buttons{
+        width: 100%;
         justify-content: center;
-        align-items: center;
-        height: 100%;
-        flex: 1;
+        gap: 12px;
+        margin: 20px 0;
     }
 
-    .home-work-btn{
-        font-size: 13px;
-    }
-
+    .home-work-btn,
     .home-cv-btn{
-        font-size: 13px;
-        border: 2px solid #434750;
+        flex: 1;
+        padding: 14px;
+        font-size: 14px;
     }
 
     .stats-container{
-        display: flex;
         flex-direction: column;
-        background-color: #09121D;
-        border-radius: 10px;
-        border: 1px solid #161F2D;
         padding: 0;
     }
-    
-    .stats-info, .stats-info-last{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 15px;
-        gap: 5px;
+
+    .stats-info,
+    .stats-info-last{
+        padding: 18px;
+        gap: 6px;
+        border-right: none;
     }
 
     .stats-info{
-        border-bottom: 1px solid #161F2D;;
-    }
-
-    .stats-info-last{
-        border-bottom: none;
+        border-bottom: 1px solid #161F2D;
     }
 
     .stats-value{
-        color: #115EE5;
-        font-size: 23px;
-        margin: 0;
+        font-size: 24px;
     }
 
     .stats-title{
-        color: #A8B0B4;
         font-size: 14px;
-        margin: 0;
     }
-
-
 }
- 

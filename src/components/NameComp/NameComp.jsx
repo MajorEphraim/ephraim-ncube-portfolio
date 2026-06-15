@@ -4,9 +4,9 @@ export default function NameComp() {
     return(
          <div className='initials-and-names'>
                 <div className='initials'>
-                    <p>ETN</p>
+                    <p>EN</p>
                 </div>
-                <p>Ephraim T Ncube</p>
+                <p>Ephraim Ncube</p>
         </div>
     )    
 }

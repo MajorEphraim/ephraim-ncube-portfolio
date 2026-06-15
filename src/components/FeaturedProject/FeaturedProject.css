@@ -321,8 +321,9 @@
     "features  mockup"
     "stackAndBtns stackAndBtns";
 }   
- 
+   
 @media (max-width:1024px) {
+
     .project-comp {
         flex: 0 0 calc((100% - 20px) / 2);
         min-width: calc((100% - 20px) / 2); 
@@ -348,6 +349,15 @@
 }
   
 @media (max-width:767px) {
+
+    .featured-project-text-and-icon{
+        margin-bottom: 15px;
+    }
+
+    .featured-project-text-and-icon p{
+        font-size: 15px;
+    }
+
     .project-comp {
         flex: 0 0 100%;
         min-width: 100%; 

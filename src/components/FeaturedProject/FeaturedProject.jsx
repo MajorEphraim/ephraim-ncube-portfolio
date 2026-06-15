@@ -22,7 +22,7 @@ export default function FeaturedProject() {
                 </div>
                 <div className='featured-project-content'>
                     <div className='project-title-and-subtitle'>
-                        <p className='project-title'>Click Truckify</p>
+                        <p className='project-title'>Click Truckify</p>   
                         <p className='project-subtitle'>Connecting Drivers to Commercial Shipments</p>
                     </div>
 
@@ -68,8 +68,8 @@ export default function FeaturedProject() {
                                 <p>Live Demo</p>
                             </div>
                             <div className='btn view-code'>
-                                    <FontAwesomeIcon icon={faGithub}/>
-                                    <p>View Code (GitHub)</p>
+                                <FontAwesomeIcon icon={faGithub}/>
+                                <p>View Code (GitHub)</p>
                             </div>
                         </div>
                     </div>

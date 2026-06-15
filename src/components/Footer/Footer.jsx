@@ -16,8 +16,8 @@ export default function Footer() {
         </div>
         
         <ul className='nav-links'>
-          {links.map(name => <li key={name}>{name}</li>)}
-        </ul>
+          {links.map(name => <li key={name}><a href={"#"+name.toLowerCase()}>{name}</a></li>)}
+        </ul> 
 
         <div className='contact-icons'>
           <a href="https://github.com" target="_blank" rel="noreferrer">

@@ -35,11 +35,11 @@ export default function NavBar() {
                 <NameComp />
 
                 <ul className='nav-menu'>
-                    <li><a className={`nav-link${activeLink === 'home' ? ' active':''}`} href='#home'>Home</a></li>
-                    <li><a className={`nav-link${activeLink === 'experience' ? ' active':''}`} href='#experience'>Experience</a></li>
-                    <li><a className={`nav-link${activeLink === 'projects' ? ' active':''}`} href='#projects'>Projects</a></li>
-                    <li><a className={`nav-link${activeLink === 'skills' ? ' active':''}`} href='#skills'>Skills</a></li>
-                    <li><a className={`nav-link${activeLink === 'contact' ? ' active':''}`} href='#contact'>Contact</a></li>
+                    <li><a className={`nav-link${activeLink === 'home' ? ' active':''}`} href='#home' onClick={()=>setActiveLink("home")}>Home</a></li>
+                    <li><a className={`nav-link${activeLink === 'experience' ? ' active':''}`} href='#experience' onClick={()=>setActiveLink("experience")}>Experience</a></li>
+                    <li><a className={`nav-link${activeLink === 'projects' ? ' active':''}`} href='#projects' onClick={()=>setActiveLink("projects")}>Projects</a></li>
+                    <li><a className={`nav-link${activeLink === 'skills' ? ' active':''}`} href='#skills' onClick={()=>setActiveLink("skills")}>Skills</a></li>
+                    <li><a className={`nav-link${activeLink === 'contact' ? ' active':''}`} href='#contact'onClick={()=>setActiveLink("contact")}>Contact</a></li>
                 </ul>
                 <div className='menu-bar-container'>
                     <FontAwesomeIcon icon={faBars}/>

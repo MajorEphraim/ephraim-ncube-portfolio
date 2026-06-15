@@ -27,9 +27,11 @@ export default function HomeSection() {
 
                         <div className='pic-side'>
                             <div className='pic-and-icons'>
-                                <div className='contact-icon-container'>
-                                    <FontAwesomeIcon icon={faUser} />
-                                </div>
+                                <a href='#contact'>
+                                    <div className='contact-icon-container'>
+                                        <FontAwesomeIcon icon={faUser} />
+                                    </div>
+                                </a>
 
                                 <img src={pic}/>
 

@@ -174,7 +174,10 @@
 }
 
 @media (max-width:1024px) {
-    
+    .project-title-and-subtitle .project-title{
+        font-size: 35px;
+    }
+
     .project-comp {
         display: flex;
         flex-direction: column;
@@ -198,9 +201,13 @@
     .featured-projects-container{
         margin: 60px 20px;
     }
-
+ 
     .header-and-btn{
         flex-direction: column;
+    }
+
+    .view-all-code{
+        margin: 30px 0 20px 0;
     }
 
     .project-comp {
@@ -216,5 +223,9 @@
         
         scroll-snap-align: start;
         box-sizing: border-box; 
+    }
+
+    .featured-project-tech-stack .tech-stack-title{
+        margin-bottom: 10px;
     }
 }

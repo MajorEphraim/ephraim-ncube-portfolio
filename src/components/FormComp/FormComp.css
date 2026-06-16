@@ -28,14 +28,30 @@ form textarea{
     flex: 1;
     min-height: 180px;
     padding: 15px;
+    color: #fff;
 }
 
 input{
     padding: 0 15px;
+    color: #fff;
 }
 
 input::placeholder, textarea::placeholder{
     color: #4E586B;
+}
+
+.form-error {
+    margin-top: 12px;
+    color: #ff6b6b;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-success {
+    margin-top: 12px;
+    color: #2F80ED;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 @media (max-width:1024px) {

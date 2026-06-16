@@ -15,6 +15,7 @@ const contactData = [
 ]
  
 export default function ContactSection() {
+  
     return(
         <section className='contact-section' id='contact'>
             <div className='contact-container'>
@@ -35,10 +36,10 @@ export default function ContactSection() {
                                 </div>
                             ))
                         }
-                    </div>
+                    </div>  
 
                     <div className='contact-form'>
-                        <FormComp/>
+                        <FormComp />
                     </div>
                 </div>   
 

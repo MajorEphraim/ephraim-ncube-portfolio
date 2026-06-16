@@ -1,0 +1,15 @@
+.close-btn{
+    background-color: #115EE5;
+    border-radius: 100px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.close-btn svg{
+    color: #fff;
+    font-size: 14px;
+}

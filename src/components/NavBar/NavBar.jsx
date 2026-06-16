@@ -2,10 +2,9 @@ import './NavBar.css'
 import NameComp from '../NameComp/NameComp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { useEffect, useState } from 'react'
-export default function NavBar() { 
-    //state to control the active tab
-    const [activeLink, setActiveLink] = useState('home')
+import { useEffect } from 'react'
+
+export default function NavBar({activeLink, setActiveLink, setIsOpen}) { 
 
     useEffect(()=>{
         const sections = document.querySelectorAll('section') // select all section tags
@@ -41,7 +40,7 @@ export default function NavBar() {
                     <li><a className={`nav-link${activeLink === 'skills' ? ' active':''}`} href='#skills' onClick={()=>setActiveLink("skills")}>Skills</a></li>
                     <li><a className={`nav-link${activeLink === 'contact' ? ' active':''}`} href='#contact'onClick={()=>setActiveLink("contact")}>Contact</a></li>
                 </ul>
-                <div className='menu-bar-container'>
+                <div className='menu-bar-container' onClick={()=>setIsOpen(true)}>
                     <FontAwesomeIcon icon={faBars}/>
                 </div>
                 <button className='download-btn'>Download CV</button> 

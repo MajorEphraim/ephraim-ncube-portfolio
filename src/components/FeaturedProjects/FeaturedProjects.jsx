@@ -3,6 +3,7 @@ import './FeaturedProjects.css'
 import Header from '../Header/Header'
 import BlueButton from '../BlueButton/BlueButton'
 import TransparentIconButton from '../TransparentIconButton/TransparentIconButton'
+import VideoModal from '../VideoModal/VideoModal'
 
 //importing Font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -53,6 +54,8 @@ export default function FeaturedProjects() {
     // State for active index
     const [activeIndex, setActiveIndex] = useState(0)
     
+    const [open, setOpen] = useState(false)
+    
     // Ref to track the scrollable container wrapper
     const wrapperRef = useRef(null)
 
@@ -90,6 +93,10 @@ export default function FeaturedProjects() {
         }
     };
 
+    const openDemo = ()=>{
+        setOpen(true)
+    }
+
     return(
         <div className='featured-projects-section'>
             <div className='featured-projects-container'>
@@ -125,7 +132,7 @@ export default function FeaturedProjects() {
                                 </div>
 
                                 <div className='action-btns'>
-                                    <div className='btn'>
+                                    <div className='btn' onClick={openDemo}>
                                         <FontAwesomeIcon icon={faUpRightFromSquare} />
                                         <p>Demo</p>
                                     </div>
@@ -153,7 +160,8 @@ export default function FeaturedProjects() {
                     }
                 </div>
 
-            </div>  
+            </div>
+            <VideoModal open={open} setOpen={setOpen}/>
         </div>
     )
 }

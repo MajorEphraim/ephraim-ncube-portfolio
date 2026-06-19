@@ -23,7 +23,7 @@ const projectsInfo = [
         desc:'A simple, real-time chat app. Users can quickly search for others, send friend requests, and start talking instantly through a modern interface.',
         skills:["React Native", "Firebase" ,"Expo"],
         repo:'https://github.com/MajorEphraim/hibye',
-        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_163828_edited.mp4?alt=media&token=16d2679a-a2d4-422a-92a2-706a8618c4b7'
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260619_135903.mp4?alt=media&token=a75431cf-d86c-4829-b226-c506a450fd06'
     },
     
      {
@@ -32,7 +32,7 @@ const projectsInfo = [
         desc:'It connects people facing professional challenges with skilled experts. Users post tasks, and solvers provide timely solutions for financial rewards and recognition.',
         skills:["React Native", "Firebase" ,"JavaScript"],
         repo:'https://github.com/MajorEphraim/globii',
-        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_163828_edited.mp4?alt=media&token=16d2679a-a2d4-422a-92a2-706a8618c4b7'
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_212018_edited.mp4?alt=media&token=534ba278-6460-465b-b9b7-9a6192aa0aa1'
 
     },
         
@@ -42,7 +42,7 @@ const projectsInfo = [
         desc:'A quiz gaming platform that gives you a chance to compete in your favorite topic with other users of similar interest and reward you the amount when you got to first place.',
         skills:["Expo","React Native", "Firebase"],
         repo:'https://github.com/MajorEphraim/myndstake',
-        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_163828_edited.mp4?alt=media&token=16d2679a-a2d4-422a-92a2-706a8618c4b7'
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260619_212324_edited.mp4?alt=media&token=1ebed09c-d457-48f7-bea0-2e39ab44b6c4'
 
     },
 

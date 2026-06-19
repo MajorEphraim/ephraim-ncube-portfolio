@@ -12,7 +12,7 @@ const statsData = [
     {title:"Specialist", value:"Mobile & Web"},
 ] 
  
-export default function HomeSection() {
+export default function HomeSection({downloadCV}) {
     return(
         <section className='home-section' id='home'>
             <div className='section-container'>
@@ -47,7 +47,7 @@ export default function HomeSection() {
 
                     <div className='home-buttons'>
                         <button className='home-work-btn' onClick={()=>window.location.href='https://github.com/MajorEphraim'}>View My Work</button>
-                        <button className='home-cv-btn'>Download CV</button>
+                        <button className='home-cv-btn' onClick={()=>downloadCV()}>Download CV</button>
                     </div>
 
                     <div className='stats-container'>

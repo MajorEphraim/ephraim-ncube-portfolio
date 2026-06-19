@@ -102,7 +102,7 @@ export default function SkillsSection() {
                 </div>
                 <div className='text-and-button'>
                     <p>Always learning new technologies and improving my skills.</p>
-                    <BlueButton name="View My Work (Code)"/>
+                    <BlueButton name="View My Work (Code)" handleClick={()=>window.location.href='https://github.com/MajorEphraim'}/>
                 </div>
 
             </div>

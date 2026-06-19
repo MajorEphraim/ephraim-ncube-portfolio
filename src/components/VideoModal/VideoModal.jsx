@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './VideoModal.css';
 
-export default function VideoModal({open, setOpen}) {
+export default function VideoModal({open, setOpen, demo}) {
 
     return (
         <>
@@ -26,7 +26,7 @@ export default function VideoModal({open, setOpen}) {
                                 controls
                                 autoPlay
                                 playsInline
-                                src="/demo.mp4"
+                                src={demo}
                             />
                         </div>
                     </div>

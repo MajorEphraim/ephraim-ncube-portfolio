@@ -22,7 +22,8 @@ const projectsInfo = [
         mockup:hb_mockup, 
         desc:'A simple, real-time chat app. Users can quickly search for others, send friend requests, and start talking instantly through a modern interface.',
         skills:["React Native", "Firebase" ,"Expo"],
-        repo:'https://github.com/MajorEphraim/hibye'
+        repo:'https://github.com/MajorEphraim/hibye',
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_163828_edited.mp4?alt=media&token=16d2679a-a2d4-422a-92a2-706a8618c4b7'
     },
     
      {
@@ -30,7 +31,9 @@ const projectsInfo = [
         mockup:g_mockup, 
         desc:'It connects people facing professional challenges with skilled experts. Users post tasks, and solvers provide timely solutions for financial rewards and recognition.',
         skills:["React Native", "Firebase" ,"JavaScript"],
-        repo:'https://github.com/MajorEphraim/globii'
+        repo:'https://github.com/MajorEphraim/globii',
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_163828_edited.mp4?alt=media&token=16d2679a-a2d4-422a-92a2-706a8618c4b7'
+
     },
         
     {
@@ -38,7 +41,9 @@ const projectsInfo = [
         mockup:ms_mockup, 
         desc:'A quiz gaming platform that gives you a chance to compete in your favorite topic with other users of similar interest and reward you the amount when you got to first place.',
         skills:["Expo","React Native", "Firebase"],
-        repo:'https://github.com/MajorEphraim/myndstake'
+        repo:'https://github.com/MajorEphraim/myndstake',
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_163828_edited.mp4?alt=media&token=16d2679a-a2d4-422a-92a2-706a8618c4b7'
+
     },
 
       {
@@ -46,7 +51,9 @@ const projectsInfo = [
         mockup:ct_mockup, 
         desc:'A South African marketplace connecting users with verified bakkie and truck owners. It digitizes vehicle hiring, eliminating social media hunting and blind negotiations.',
         skills:["React.js", "Firebase" ,"Node.js"],
-        repo:'https://github.com/MajorEphraim/click-truckify'
+        repo:'https://github.com/MajorEphraim/click-truckify',
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_163828_edited.mp4?alt=media&token=16d2679a-a2d4-422a-92a2-706a8618c4b7'
+
     },
 ]
 
@@ -55,6 +62,7 @@ export default function FeaturedProjects() {
     const [activeIndex, setActiveIndex] = useState(0)
     
     const [open, setOpen] = useState(false)
+    const [openedDemo, setOpenedDemo] = useState(null)
     
     // Ref to track the scrollable container wrapper
     const wrapperRef = useRef(null)
@@ -93,7 +101,8 @@ export default function FeaturedProjects() {
         }
     };
 
-    const openDemo = ()=>{
+    const openDemo = (demo)=>{
+        setOpenedDemo(demo)
         setOpen(true)
     }
 
@@ -132,7 +141,7 @@ export default function FeaturedProjects() {
                                 </div>
 
                                 <div className='action-btns'>
-                                    <div className='btn' onClick={openDemo}>
+                                    <div className='btn' onClick={()=>openDemo(item.demo)}>
                                         <FontAwesomeIcon icon={faUpRightFromSquare} />
                                         <p>Demo</p>
                                     </div>
@@ -142,7 +151,7 @@ export default function FeaturedProjects() {
                                     </div>
                                     
                                 </div>
-                            </div>
+                            </div>  
                         ))
                     }
                 </div>
@@ -161,7 +170,7 @@ export default function FeaturedProjects() {
                 </div>
 
             </div>
-            <VideoModal open={open} setOpen={setOpen}/>
+            <VideoModal open={open} setOpen={setOpen} demo={openedDemo}/>
         </div>
     )
 }

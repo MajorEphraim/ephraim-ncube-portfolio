@@ -15,11 +15,19 @@ function App() {
   const [activeLink, setActiveLink] = useState('home')
   const [isOpen, setIsOpen] = useState(false)
 
+  //downloads cv from firebase storage
+  const downloadCV = () => {
+    window.open(
+        'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/documents%2FJunior_Ephraim_Ncube_Resume.pdf?alt=media&token=bf57f3d9-4adf-42db-af3a-62c058e3a8b4',
+        '_blank'
+    );
+   };   
+
   return (
     <div className='main-container'>
       <Drawer isOpen={isOpen} activeLink={activeLink} onClose={()=>setIsOpen(false)}/>
-      <NavBar activeLink={activeLink} setActiveLink={setActiveLink} setIsOpen={setIsOpen}/>  
-      <HomeSection/>
+      <NavBar activeLink={activeLink} setActiveLink={setActiveLink} setIsOpen={setIsOpen} downloadCV={downloadCV}/>  
+      <HomeSection downloadCV={downloadCV}/>
       <ExperienceSection/>
       <section className='projects-section' id='projects'>
         <FeaturedProject/>

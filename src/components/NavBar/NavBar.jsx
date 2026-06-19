@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 
-export default function NavBar({activeLink, setActiveLink, setIsOpen}) { 
+export default function NavBar({activeLink, setActiveLink, setIsOpen, downloadCV}) { 
 
     useEffect(()=>{
         const sections = document.querySelectorAll('section') // select all section tags
@@ -43,7 +43,7 @@ export default function NavBar({activeLink, setActiveLink, setIsOpen}) {
                 <div className='menu-bar-container' onClick={()=>setIsOpen(true)}>
                     <FontAwesomeIcon icon={faBars}/>
                 </div>
-                <button className='download-btn'>Download CV</button> 
+                <button className='download-btn' onClick={()=>downloadCV()}>Download CV</button> 
             </div>
         </nav>
     )

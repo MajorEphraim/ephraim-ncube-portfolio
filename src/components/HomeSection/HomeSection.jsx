@@ -46,7 +46,7 @@ export default function HomeSection({downloadCV}) {
                     </div>
 
                     <div className='home-buttons'>
-                        <button className='home-work-btn' onClick={()=>window.location.href='https://github.com/MajorEphraim'}>View My Work</button>
+                        <button className='home-work-btn' onClick={()=>window.location.href='https://github.com/MajorEphraim?tab=repositories'}>View My Work</button>
                         <button className='home-cv-btn' onClick={()=>downloadCV()}>Download CV</button>
                     </div>
 

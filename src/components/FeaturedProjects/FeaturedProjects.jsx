@@ -111,7 +111,7 @@ export default function FeaturedProjects() {
             <div className='featured-projects-container'>
                 <div className='header-and-btn'>
                     <Header title="Featured Projects" subtitle="Some of the things I've built"/>
-                    <div className='btn view-all-code' onClick={()=>window.location.href='https://github.com/MajorEphraim'}>
+                    <div className='btn view-all-code' onClick={()=>window.location.href='https://github.com/MajorEphraim?tab=repositories'}>
                         <p>View all projects</p>
                         <FontAwesomeIcon icon={faArrowRight}/>
                     </div>

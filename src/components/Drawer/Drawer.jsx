@@ -24,7 +24,7 @@ export default function Drawer({
             }
         }, 350);
     };
-
+  
     return (
         <div className={`drawer-container ${isOpen ? 'open' : 'close'}`}>
             <div className="app-drawer">

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './VideoModal.css';
 
-export default function VideoModal({open, setOpen, demo}) {
+export default function VideoModal({open, setOpen, demo, size}) {
 
     return (
         <>
@@ -11,7 +11,7 @@ export default function VideoModal({open, setOpen, demo}) {
                     onClick={() => setOpen(false)}
                 >
                     <div
-                        className="modal-content"
+                        className={`${size === "Big" ? "modal-content-big" : "modal-content"}`}
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button
@@ -20,8 +20,7 @@ export default function VideoModal({open, setOpen, demo}) {
                         >
                             ×
                         </button>
-
-                        <div className="video-container">
+                        <div className={`${size === 'Big' ? 'video-container-big' : 'video-container'}`}>
                             <video
                                 controls
                                 autoPlay

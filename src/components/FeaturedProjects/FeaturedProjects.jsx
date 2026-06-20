@@ -15,6 +15,7 @@ import hb_mockup from '../../assets/mockups/hb_mockup.png'
 import ct_mockup from '../../assets/mockups/ct_mockup.png'
 import g_mockup from '../../assets/mockups/g_mockup.png'
 import ms_mockup from '../../assets/mockups/ms_mockup.png'
+import im_mockup from '../../assets/mockups/im_mockup.png'
 
 const projectsInfo = [
     {
@@ -46,6 +47,17 @@ const projectsInfo = [
 
     },
 
+     {
+        name:"Inventory Manager",
+        mockup:im_mockup, 
+        desc:'a desktop inventory management application built for small businesses to manage products, monitor stock levels, track inventory value, and identify low-stock items. The system provides a modern dashboard with real-time inventory metrics, product management features (Create, Read, Update, Delete), and local database storage for efficient inventory tracking and decision-making.',
+        skills:["C#",".NET", "SQLite"],
+        repo:'https://github.com/MajorEphraim/LocalInventoryManager',
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2FRecording%202026-06-20%20203442.mp4?alt=media&token=1062401e-13bb-46c7-bd1a-6100397e1a5a',
+        size:"Big"
+
+    },
+
       {
         name:"Click Truckify",
         mockup:ct_mockup, 
@@ -63,6 +75,7 @@ export default function FeaturedProjects() {
     
     const [open, setOpen] = useState(false)
     const [openedDemo, setOpenedDemo] = useState(null)
+    const [openedSize, setOpenedSize] = useState(null)
     
     // Ref to track the scrollable container wrapper
     const wrapperRef = useRef(null)
@@ -101,8 +114,9 @@ export default function FeaturedProjects() {
         }
     };
 
-    const openDemo = (demo)=>{
+    const openDemo = (demo,size=null)=>{
         setOpenedDemo(demo)
+        setOpenedSize(size)
         setOpen(true)
     }
 
@@ -141,7 +155,7 @@ export default function FeaturedProjects() {
                                 </div>
 
                                 <div className='action-btns'>
-                                    <div className='btn' onClick={()=>openDemo(item.demo)}>
+                                    <div className='btn' onClick={()=>openDemo(item.demo, item.size)}>
                                         <FontAwesomeIcon icon={faUpRightFromSquare} />
                                         <p>Demo</p>
                                     </div>
@@ -170,7 +184,7 @@ export default function FeaturedProjects() {
                 </div>
 
             </div>
-            <VideoModal open={open} setOpen={setOpen} demo={openedDemo}/>
+            <VideoModal open={open} setOpen={setOpen} demo={openedDemo} size={openedSize}/>
         </div>
     )
 }

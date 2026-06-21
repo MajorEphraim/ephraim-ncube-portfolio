@@ -35,7 +35,7 @@ export const timelineData = [
   },
   {
     year: "2025",
-    desc: "Co-founded a digital startup with 6 directors. Developed a fully compliant mobile gaming application.",
+    desc: "Co-founded a digital startup with 6 directors. Developed a fully compliant mobile gaming application called MyndStake.",
     icon: faDice
   },
   {

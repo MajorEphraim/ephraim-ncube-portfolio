@@ -24,7 +24,7 @@ const projectsInfo = [
         desc:'A simple, real-time chat app. Users can quickly search for others, send friend requests, and start talking instantly through a modern interface.',
         skills:["React Native", "Firebase" ,"Expo"],
         repo:'https://github.com/MajorEphraim/hibye',
-        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260619_135903.mp4?alt=media&token=a75431cf-d86c-4829-b226-c506a450fd06'
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Fhibye_video.mp4?alt=media&token=18a8a6b9-03fe-4ba6-aa45-485be641eedd'
     },
     
      {
@@ -33,7 +33,7 @@ const projectsInfo = [
         desc:'It connects people facing professional challenges with skilled experts. Users post tasks, and solvers provide timely solutions for financial rewards and recognition.',
         skills:["React Native", "Firebase" ,"JavaScript"],
         repo:'https://github.com/MajorEphraim/globii',
-        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_212018_edited.mp4?alt=media&token=534ba278-6460-465b-b9b7-9a6192aa0aa1'
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Fglobii_video.mp4?alt=media&token=685d2025-391f-4895-9d94-2ff9ba97f7f3'
 
     },
         
@@ -43,8 +43,7 @@ const projectsInfo = [
         desc:'A quiz gaming platform that gives you a chance to compete in your favorite topic with other users of similar interest and reward you the amount when you got to first place.',
         skills:["Expo","React Native", "Firebase"],
         repo:'https://github.com/MajorEphraim/myndstake',
-        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260619_212324_edited.mp4?alt=media&token=1ebed09c-d457-48f7-bea0-2e39ab44b6c4'
-
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Fmyndstake_video.mp4?alt=media&token=75cc50a9-2e3f-4408-8e56-8ebed733e812'
     },
 
      {
@@ -53,7 +52,7 @@ const projectsInfo = [
         desc:'a desktop inventory management application built for small businesses to manage products, monitor stock levels, track inventory value, and identify low-stock items. The system provides a modern dashboard with real-time inventory metrics, product management features (Create, Read, Update, Delete), and local database storage for efficient inventory tracking and decision-making.',
         skills:["C#",".NET", "SQLite"],
         repo:'https://github.com/MajorEphraim/LocalInventoryManager',
-        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2FRecording%202026-06-20%20203442.mp4?alt=media&token=1062401e-13bb-46c7-bd1a-6100397e1a5a',
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Fdashboard_video.mp4?alt=media&token=1b041dc5-286c-4bc3-a95d-f2041a095860',
         size:"Big"
 
     },
@@ -64,7 +63,7 @@ const projectsInfo = [
         desc:'A South African marketplace connecting users with verified bakkie and truck owners. It digitizes vehicle hiring, eliminating social media hunting and blind negotiations.',
         skills:["React.js", "Firebase" ,"Node.js"],
         repo:'https://github.com/MajorEphraim/click-truckify',
-        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Faz_recorder_20260617_163828_edited.mp4?alt=media&token=16d2679a-a2d4-422a-92a2-706a8618c4b7'
+        demo:'https://firebasestorage.googleapis.com/v0/b/ephraim-ncube-portfolio.firebasestorage.app/o/Portfolio%20videos%2Fclicktruckify_video.mp4?alt=media&token=5895b739-f68c-4fd3-aa1d-e63555b92746'
 
     },
 ]

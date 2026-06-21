@@ -24,6 +24,7 @@ export default function VideoModal({open, setOpen, demo, size}) {
                             <video
                                 controls
                                 autoPlay
+                                muted
                                 playsInline
                                 src={demo}
                             />
